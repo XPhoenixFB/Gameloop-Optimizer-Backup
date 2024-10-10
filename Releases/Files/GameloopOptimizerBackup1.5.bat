@@ -10,12 +10,13 @@ set "col3=[97m"  :: Blanco
 set "reset=[0m"  :: Resetear formato
 
 setlocal EnableDelayedExpansion
+
 :: Configuración de las variables
-set "current_version=1.5"  :: Versión actual de la Herramienta
-set "version_url=https://github.com/XPhoenixFB/Gameloop-Optimizer-Backup/raw/version.txt"
-set "update_url=https://github.com/XPhoenixFB/Gameloop-Optimizer-Backup/raw/Releases/Files/GameloopOptimizerBackup1.5.bat"
+set "current_version=1.5"  :: Versión actual de la herramienta
+set "version_url=https://raw.githubusercontent.com/XPhoenixFB/Gameloop-Optimizer-Backup/main/version.txt"
+set "update_url=https://raw.githubusercontent.com/XPhoenixFB/Gameloop-Optimizer-Backup/main/Releases/Files/GameloopOptimizerBackup1.6.bat"
 set "temp_version_file=%temp%\version.txt"
-set "temp_update_file=%temp%\GameloopOptimizerBackup1.5.bat"
+set "temp_update_file=%temp%\GameloopOptimizerBackup1.6.bat"
 
 :: Verificar la última versión disponible en GitHub
 echo Verificando actualizaciones...
@@ -31,7 +32,7 @@ if exist "%temp_version_file%" (
     :: Comparar la versión local con la versión remota
     if not "%current_version%"=="%latest_version%" (
         echo.
-        echo Hay una nueva versión disponible. Descargando actualización...
+        echo Hay una nueva versión disponible. Descargando actualizacion...
         
         :: Descargar el script actualizado
         powershell -Command "(New-Object System.Net.WebClient).DownloadFile('%update_url%', '%temp_update_file%')" >nul 2>&1
@@ -42,7 +43,7 @@ if exist "%temp_version_file%" (
             del /f /q "%temp_update_file%" >nul 2>&1
 
             echo.
-            echo Actualizacion completada. Reiniciando el script...
+            echo Actualización completada. Reiniciando el script...
             timeout /t 3 >nul
             start "" "%~f0" & exit /b
         ) else (
@@ -52,11 +53,12 @@ if exist "%temp_version_file%" (
         echo No hay nuevas actualizaciones disponibles.
     )
 ) else (
-    echo No se pudo verificar la version. Revisar conexión a internet.
+    echo No se pudo verificar la versión. Revisar conexion a internet o la URL proporcionada.
 )
 
 echo.
-echo Continuando con la ejecución del script...
+echo Continuando con la ejecución de la herramienta...
+
 :: Aquí continúa el resto del script original...
 
 title Gameloop Optimizer Backup v1.5 by XPhoenix
