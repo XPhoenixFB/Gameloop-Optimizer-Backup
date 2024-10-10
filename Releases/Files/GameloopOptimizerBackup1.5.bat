@@ -12,8 +12,8 @@ set "reset=[0m"  :: Resetear formato
 setlocal EnableDelayedExpansion
 :: Configuración de las variables
 set "current_version=1.5"  :: Versión actual de la Herramienta
-set "version_url=https://raw.githubusercontent.com/XPhoenixFB/Gameloop-Optimizer-Backup/raw/version.txt"
-set "update_url=https://raw.githubusercontent.com/XPhoenixFB/Gameloop-Optimizer-Backup/raw/Releases/Files/GameloopOptimizerBackup1.5.bat"
+set "version_url=https://github.com/XPhoenixFB/Gameloop-Optimizer-Backup/raw/version.txt"
+set "update_url=https://github.com/XPhoenixFB/Gameloop-Optimizer-Backup/raw/Releases/Files/GameloopOptimizerBackup1.5.bat"
 set "temp_version_file=%temp%\version.txt"
 set "temp_update_file=%temp%\GameloopOptimizerBackup1.5.bat"
 
