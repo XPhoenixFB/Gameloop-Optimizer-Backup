@@ -128,7 +128,7 @@ echo      %col1%\__/%reset%(_)(_)(_/\/\_)(___)(____) \__/  \__/ (_)
 echo                 __   ___  ____  __  __  __  __  ___  ___  %col1%___%reset%
 echo                /  \ (  ,\(_  _)(  )(  \/  )(  )(_  )(  _)%col1%(  ,)%reset%
 echo               ( () ) ) _/  )(   )(  )    (  )(  / /  ) _) %col1%)  \%reset%
-echo                \__/ (_)   (__) (__)(_/\/\_)(__)(___)(___)%col1%(_)\_)%reset%(%version%)
+echo                \__/ (_)   (__) (__)(_/\/\_)(__)(___)(___)%col1%(_)\_)%reset%(%current_version%)
 echo.
 echo               %col3%[%col1%1%reset%] Backup  [%col1%2%reset%] Restaurar  [%col1%3%reset%] Borrar Backup
 echo                        [%col1%4%reset%] Manual  %col3%[%col1%5%reset%] Contactame
